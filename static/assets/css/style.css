@@ -12,6 +12,7 @@ body {
 	text-align: center;
 }
 
+/* logo e texto principal */
 .back_top {
 	background: url('../img/back_top_green.png');
 	background-repeat: no-repeat;
@@ -105,4 +106,26 @@ body {
 	margin-top: 5vw;
 	font-size: 2rem;
 	font-weight: 900;
+}
+
+/* listas */
+.list {
+	margin: 0 10vw;
+}
+
+@media (max-width: 728px) {
+	.list .col {
+		margin-bottom: 3vw;
+	}
+}
+
+.list ul {
+	color: #106d64;
+	list-style: none;
+}
+
+.list li::before {
+	content: "• ";
+	color: #feb452;
+	margin-right: 10px;
 }
