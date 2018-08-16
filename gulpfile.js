@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-
+var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 // reload task
@@ -18,6 +18,6 @@ gulp.task('browser-sync', function() {
 
 gulp.task('dev', function() {
     // observando arquivos html, js e css
-    gulp.watch(['*.html', 'assets/js/*.js', 'assets/css/*.css'], ['bs-reload']);
+    gulp.watch(['*.html', 'static/assets/js/*.js', 'static/assets/css/*.css'], ['bs-reload']);
 	return runSequence(['browser-sync']);
 });

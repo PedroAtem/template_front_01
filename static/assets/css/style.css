@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+body {
+	margin: 0px;
+	font-family: Roboto, sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.back_top {
+	background: url('../img/back_top_green.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+	height: 50vw;
+}
+
+.col-header-logo {
+	margin-top: 3vw;
+}
+
+.col-header-text {
+	margin-top: 3vw;
+	padding-left: 3vw !important;
+	border-left: 1px solid #fff;
+}
+
+.img_logo {
+	margin-top: 6vw;
+	max-width: 60%;
+}
+
+.header_image_title {
+	color: #feb452;
+	font-size: 3.7vw;
+}
+
+.header_title_1 {
+	color: #feb452;
+	font-size: 2.5vw;
+	margin-bottom: 1.5vw;
+}
+
+.header_title_2 {
+	color: #fff;
+	font-size: 2vw;
+	margin-bottom: 3.2vw;
+}
+
+.header_title_3 {
+	color: #feb452;
+	font-size: 3.7vw;
+	font-weight: bold;
+	margin-bottom: 2vw;
+}
+
+.header_text_1 {
+	color: #fff;
+	font-size: 1.5vw;
+	margin-bottom: 1.5vw;
+}
+
+.header_text_2 {
+	color: #fff;
+	font-size: 1.5vw;
+	margin-bottom: 0.8vw;
+}
+
+.header_button {
+	background-color: #feb452;
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	-ms-border-radius: 42px;
+	border-radius: 42px;
+	display: inline-block;
+	cursor: pointer;
+	color: #064a3c;
+	font-weight:  bold;
+	font-size: 2.3vw;
+	padding:  0.5vw 2vw;
+	text-decoration: none;
+	margin-bottom: 1.5vw;
+}
+
+.header_button:hover {
+	background-color: #FFA32A;
+}
+
+.header_button:active {
+	position: relative;
+	top: 1px;
+}
+
+.header_title_4 {
+	color: #feb452;
+	font-size: 2.3vw;
+}
+
+.title_1 {
+	color: #106d64;
+	margin-top: 5vw;
+	font-size: 2rem;
+	font-weight: 900;
+}
