@@ -10,3 +10,12 @@
 	init_carousel();
 	init_contact();
 })();
+
+/*
+ * Função para ir até o formulário de contato
+ */
+function go_to_contact() {
+	setTimeout(function() {
+		window.scrollTo(0, document.getElementById('footer').getBoundingClientRect().y);
+	}, 10);
+}
