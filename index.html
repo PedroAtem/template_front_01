@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="static/assets/css/accordion.css">
 		<link rel="stylesheet" href="static/assets/css/floating-input.css">
 		<link rel="stylesheet" href="static/assets/css/style.css">
+		<link rel="stylesheet" href="static/assets/css/contact.css">
 		<link rel="stylesheet" href="static/assets/css/grid.css">
 	</head>
 
@@ -147,43 +148,61 @@
 
 		<!-- RODAPÉ E FORMULÁRIO DE CONTATO -->
 		<div class="footer center" id="footer">
-			<form class="form_contact">
 
-				<div class="group center">      
-					<input type="text" required>
+			<div class="form_contact">
+
+				<div class="group center contact_item" id="div_name">     
+					<input class="contact_item_input" type="text" id="name" name="name" required>
 					<span class="highlight"></span>
 					<span class="bar"></span>
-					<label>Name</label>
+					<label>Nome*</label>
+					<div class="invalid_msg"></div>
 				</div>
 
-				<div class="group center">      
-					<input type="text" required>
+				<div class="group center contact_item" id="div_email">     
+					<input class="contact_item_input" type="text" id="email" name="email" required>
 					<span class="highlight"></span>
 					<span class="bar"></span>
-					<label>Email</label>
+					<label>E-mail*</label>
+					<div class="invalid_msg"></div>
 				</div>
 
-				<div class="group center">      
-					<input type="text" required>
+				<div class="group center contact_item" id="div_phone">     
+					<input class="contact_item_input" type="text" id="phone" name="phone" required>
 					<span class="highlight"></span>
 					<span class="bar"></span>
 					<label>Telefone</label>
+					<div class="invalid_msg"></div>
 				</div>
 
-				<div class="group center">      
-					<textarea required></textarea>
+				<div class="group center contact_item" id="div_message">     
+					<textarea class="contact_item_input" required id="message" name="message"></textarea>
 					<span class="highlight"></span>
 					<span class="bar"></span>
-					<label>Mensagem</label>
+					<label>Mensagem*</label>
+					<div class="invalid_msg"></div>
 				</div>
 
-				<a href="#" type="submit" class="contact_button">ENVIAR</a>
+				<a onclick="send_message()" class="contact_button">ENVIAR</a>
 
-			</form>
+			</div>
+
 		</div>
+
+		<!-- inputmask -->
+		<script src="node_modules/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/inputmask.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/inputmask.extensions.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/inputmask.numeric.extensions.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/inputmask.date.extensions.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/inputmask.phone.extensions.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/phone-codes/phone.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/phone-codes/phone-be.js"></script>
+		<script src="node_modules/inputmask/dist/inputmask/phone-codes/phone-ru.js"></script>
 
 		<script src="static/assets/js/accordion.js" type="text/javascript"></script>
 		<script src="static/assets/js/carousel.js" type="text/javascript"></script>
+		<script src="static/assets/js/validation.js" type="text/javascript"></script>
 		<script src="static/assets/js/contact.js" type="text/javascript"></script>
 		<script src="static/assets/js/init.js" type="text/javascript"></script>
 	</body>

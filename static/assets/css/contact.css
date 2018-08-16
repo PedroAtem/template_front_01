@@ -1,0 +1,47 @@
+@media (max-width: 728px) {
+	.form_contact, input, textarea, .bar {
+		width: 70vw;
+	}
+}
+
+.contact_button {
+	background-color: #feb452;
+	-webkit-border-radius: 200px;
+	-ms-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+	display: inline-block;
+	cursor: pointer;
+	color: #064a3c;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0.3rem 2rem;
+	text-decoration: none;
+}
+
+.contact_button:hover {
+	background-color: #FFA32A;
+}
+
+.contact_button:active {
+	position: relative;
+	top: 1px;
+}
+
+.invalid, .invalid input, .invalid textarea {
+	color: #ac5650 !important;
+	border-bottom: 1px solid #ac5650 !important;
+}
+
+.invalid .bar:before, .invalid .bar:after {
+	background: #ac5650 !important;
+}
+
+.invalid label {
+	color: #ac5650 !important;
+}
+
+.invalid_msg {
+	float: left;
+	font-size: 1rem;
+}

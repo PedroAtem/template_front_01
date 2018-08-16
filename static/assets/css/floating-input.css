@@ -62,7 +62,7 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid
 	width: 0;
 	bottom: 1px; 
 	position: absolute;
-	background: #fff; 
+	background: #fff;
 	-webkit-transition: 0.2s ease all;
 	-moz-transition: 0.2s ease all; 
 	-ms-transition: 0.2s ease all;
