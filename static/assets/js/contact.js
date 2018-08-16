@@ -19,6 +19,8 @@ function init_contact() {
 				show_invalid(document.getElementById('div_'+this.name), ret.invalid_msg);
 		});
 	}
+
+	show_modal('sadihvascgdvbasidsajdkbagsd asdha  dhasydgusah disav', 'info');
 }
 
 /*
@@ -57,7 +59,7 @@ function send_message() {
 		document.getElementById('phone').value = '';
 		document.getElementById('message').value = '';
 		
-		alert('mensagem enviada');
+		show_modal('Mensagem enviada!', 'success');
 	}
 
 }
