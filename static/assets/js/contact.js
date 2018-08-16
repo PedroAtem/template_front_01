@@ -19,8 +19,6 @@ function init_contact() {
 				show_invalid(document.getElementById('div_'+this.name), ret.invalid_msg);
 		});
 	}
-
-	show_modal('sadihvascgdvbasidsajdkbagsd asdha  dhasydgusah disav', 'info');
 }
 
 /*
