@@ -61,7 +61,7 @@ function validate_phone(phone) {
 				 .replace(/ /g, '')
 				 .replace(/_/g,'')
 				 .replace(/\-/g, '');
-	if (phone.length != 10 && phone.length != 11) {
+	if (phone.length != 10 && phone.length != 11 && phone != '') {
  		ret.invalid = true; ret.invalid_msg = 'Formato inválido';	
  	}
  	return ret;
