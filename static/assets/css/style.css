@@ -157,3 +157,30 @@ body {
 	from { background-position: 100vw 4vw; }
 	to { background-position: 0px 4vw; }
 }
+
+/* formulário de contato e footer */
+.footer {
+	background: #0d6358;
+	padding: 30px 10px;
+}
+
+@media (max-width: 728px) {
+	.form_contact, input, textarea, .bar {
+		width: 70vw;
+	}
+}
+
+.contact_button {
+	background-color: #feb452;
+	-webkit-border-radius: 200px;
+	-ms-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+	display: inline-block;
+	cursor: pointer;
+	color: #064a3c;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0.3rem 2rem;
+	text-decoration: none;
+}
