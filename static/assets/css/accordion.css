@@ -5,7 +5,7 @@
 }
 @media (max-width: 728px) {
 	.accordion {
-		width: 90%;
+		width: 90% !important;
 	}
 }
 

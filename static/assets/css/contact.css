@@ -1,6 +1,6 @@
 @media (max-width: 728px) {
 	.form_contact, input, textarea, .bar {
-		width: 70vw;
+		width: 70vw !important;
 	}
 }
 
