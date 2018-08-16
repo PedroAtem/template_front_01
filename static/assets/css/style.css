@@ -184,3 +184,8 @@ body {
 	padding: 0.3rem 2rem;
 	text-decoration: none;
 }
+
+/* carousel */
+.carousel {
+	margin-bottom: 5vw;
+}
