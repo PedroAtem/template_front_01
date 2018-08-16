@@ -90,7 +90,7 @@ function show_carousel(n, carousel_i) {
 		carousel_index[carousel_i] = 1;
 	}
 	if (n < 1) {
-		carousel_index[carousel_i] = slides.length
+		carousel_index[carousel_i] = slides.length;
 	} 
 	
 	// escondendo todos os itens
@@ -99,7 +99,7 @@ function show_carousel(n, carousel_i) {
 	}
 
 	// removendo a classe carousel-active de todos os pontos
-	for (var i = 0; i < dots.length; i++) {
+	for (i = 0; i < dots.length; i++) {
 	  dots[i].className = dots[i].className.replace(" carousel-active", "");
 	}
 

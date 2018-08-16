@@ -14,7 +14,7 @@ img {vertical-align: middle;}
 
 @media (max-width: 728px) {
 	.carousel-controls, input, textarea, .bar {
-		width: 90%;
+		width: 90% !important;
 	}
 }
 

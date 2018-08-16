@@ -47,7 +47,7 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid
 /* funcionar no ie9 */
 @media \9screen,screen\0 {
 	input, textarea {
-		padding-left: 8vw;
+		padding-left: 8vw !important;
 	}
 }
 

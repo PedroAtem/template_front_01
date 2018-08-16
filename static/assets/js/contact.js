@@ -15,7 +15,8 @@ function init_contact() {
 	for (var i = 0; i < elements.length; i++) {
 		elements[i].addEventListener('blur', function() {
 			remove_invalid(document.getElementById('div_'+this.name));
-			if (ret = window['validate_'+this.name](this.value), ret.invalid)
+			var ret = window['validate_'+this.name](this.value);
+			if (ret.invalid)
 				show_invalid(document.getElementById('div_'+this.name), ret.invalid_msg);
 		});
 	}
@@ -25,9 +26,7 @@ function init_contact() {
  * Inicia as máscaras nos inputs
  */
 function init_mask() {
-	var el_phone = document.getElementById("phone");
-	var phone_mask = new Inputmask("(99) 99999-9999");
-	phone_mask.mask(el_phone);
+	PureMask.format(".phone", false);
 }
 
 /*
@@ -42,13 +41,17 @@ function send_message() {
 	var val_message = document.getElementById('message').value;
 
 	// validando campos
-	if (ret_name = validate_name(val_name), ret_name.invalid)
+	var ret_name = validate_name(val_name);
+	var ret_email = validate_email(val_email);
+	var ret_phone = validate_phone(val_phone);
+	var ret_message = validate_message(val_message);
+	if (ret_name.invalid)
 		show_invalid(document.getElementById('div_name'), ret_name.invalid_msg);
-	if (ret_email = validate_email(val_email), ret_email.invalid)
+	if (ret_email.invalid)
 		show_invalid(document.getElementById('div_email'), ret_email.invalid_msg);
-	if (ret_phone = validate_phone(val_phone), ret_phone.invalid)
+	if (ret_phone.invalid)
 		show_invalid(document.getElementById('div_phone'), ret_phone.invalid_msg);
-	if (ret_message = validate_message(val_message), ret_message.invalid)
+	if (ret_message.invalid)
 		show_invalid(document.getElementById('div_message'), ret_message.invalid_msg);
 	
 	if (!ret_name.invalid && !ret_email.invalid && !ret_phone.invalid && !ret_message.invalid) {

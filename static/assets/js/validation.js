@@ -6,7 +6,7 @@
 
 var regex = {
  	email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-}
+};
 
 /*
  * Validar o nome
@@ -17,7 +17,7 @@ function validate_name(name) {
  	var ret = {
  		invalid: false,
  		invalid_msg: ''
- 	}
+ 	};
  	if (name == '' || name == null) {
  		ret.invalid = true; ret.invalid_msg = 'Este campo é obrigatório';
  	}
@@ -36,7 +36,7 @@ function validate_email(email) {
 	var ret = {
 		invalid: false,
 		invalid_msg: ''
-	}
+	};
 	if (email == '' || email == null) {
  		ret.invalid = true; ret.invalid_msg = 'Este campo é obrigatório';
  	}
@@ -55,16 +55,13 @@ function validate_phone(phone) {
 	var ret = {
 		invalid: false,
 		invalid_msg: ''
-	}
+	};
 	phone = phone.replace(/\(/g, '')
 				 .replace(/\)/g, '')
 				 .replace(/ /g, '')
 				 .replace(/_/g,'')
 				 .replace(/\-/g, '');
-	if (phone == '' || phone == null) {
- 		ret.invalid = true; ret.invalid_msg = 'Este campo é obrigatório';
- 	}
- 	else if (phone.length != 10 && phone.length != 11) {
+	if (phone.length != 10 && phone.length != 11) {
  		ret.invalid = true; ret.invalid_msg = 'Formato inválido';	
  	}
  	return ret;
@@ -79,7 +76,7 @@ function validate_message(message) {
 	var ret = {
 		invalid: false,
 		invalid_msg: ''
-	}
+	};
 	if (message == '' || message == null) {
  		ret.invalid = true; ret.invalid_msg = 'Este campo é obrigatório';
  	}
