@@ -129,3 +129,31 @@ body {
 	color: #feb452;
 	margin-right: 10px;
 }
+
+/* div do accordion */
+.back_mid_top {
+	margin-top: 5vw;
+	transform:skew(0deg,-2deg);
+	-ms-transform:skew(0deg,-2deg);
+	-webkit-transform:skew(0deg,-2deg); 
+	background: #feb452;
+	height: 5vw;
+}
+.back_mid {
+	background: #feb452;
+	background-image: url('../img/clouds.png');
+	background-position: 0 -5;
+	background-repeat: repeat;
+    background-size: 70%;
+	margin-top: -2vw;
+
+	-webkit-animation: animated_cloud 15s linear infinite;
+	-moz-animation: animated_cloud 15s linear infinite;
+	-ms-animation: animated_cloud 15s linear infinite;
+	animation: animated_cloud 15s linear infinite;
+}
+
+@keyframes animated_cloud {
+	from { background-position: 100vw 4vw; }
+	to { background-position: 0px 4vw; }
+}
